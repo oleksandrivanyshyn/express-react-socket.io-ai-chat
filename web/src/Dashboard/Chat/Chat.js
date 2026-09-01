@@ -1,4 +1,6 @@
 import React from 'react';
+import Messages from './Messages';
+import NewMessageInput from './NewMessageInput';
 const ChatLogo = () => {
   return (
     <div className="chat_gpt_logo_container">
@@ -9,7 +11,8 @@ const ChatLogo = () => {
 const Chat = () => {
   return (
     <div className="chat_container">
-      <ChatLogo />
+      <Messages />
+      <NewMessageInput />
     </div>
   );
 };
