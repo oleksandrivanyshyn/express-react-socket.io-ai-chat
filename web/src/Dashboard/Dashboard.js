@@ -1,7 +1,14 @@
 import React from 'react';
+import Sidebar from './Sidebar/Sidebar';
+import Chat from './Chat/Chat';
 
 const Dashboard = () => {
-  return <div className="dashboard_container">Dashboard</div>;
+  return (
+    <div className="dashboard_container">
+      <Sidebar />
+      <Chat />
+    </div>
+  );
 };
 
 export default Dashboard;
