@@ -24,7 +24,19 @@ const SlowText = (props) => {
 };
 
 const Message = ({ content, aiMessage, animate }) => {
-  return <div>Message</div>;
+  return (
+    <div
+      className="message_container"
+      style={{ background: aiMessage ? 'rgb(247, 247, 248)' : 'white' }}
+    >
+      <div className="message_avatar_container">
+        {aiMessage ? <FcMindMap /> : <GrUser />}
+      </div>
+      <p className="message_text">
+        {animate ? <SlowText speed={20} text={content} /> : content}
+      </p>
+    </div>
+  );
 };
 
 export default Message;
